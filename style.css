@@ -1,0 +1,229 @@
+*{
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+body{
+  background: url("/pictures/Fondo.png");
+  display: flex;
+  min-height: 100vh;
+}
+
+#contenedor{
+  padding: 50px 0px 0px 0px;
+  margin: auto;
+  perspective: 2000px;
+}
+
+#habitación{
+  width: 1050px;
+  height: 50px;
+  position: relative;
+  transform-style: preserve-3d;
+  transform:rotateX(-40deg);
+}
+
+.caras{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#uno{
+  height: 600px;
+  background: black;
+  transform: translatey(-300px) rotatex(90deg);
+}
+
+#dos{
+  background: url("pictures/Patron.png");
+  background-repeat: repeat;
+  background-size: 100%;
+  background-color: #916a3b;
+  transform: translateZ(300px);
+}
+
+#tres{
+  background: url("pictures/Patron.png");
+  background-repeat: repeat;
+  background-size: 100%;
+  background-color: #916a3b;
+  transform: translateZ(-320px) translatey(-128px) rotatex(90deg);
+}
+
+#pared{
+  height: 100px;
+  background: white;
+  transform: translateZ(-300px) translatey(-100px);
+}
+
+#logo{
+  width: 315px;
+  height: 100px;
+  text-align: center;
+  float: left;  
+}
+
+#MesaAd{
+  font-size: 20px;
+  width: 700px;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: right;
+  align-items: center;
+  float: left;  
+}
+
+label{
+  padding-right: 5px;
+  padding-left: 20px;
+  text-shadow: 0px -1px 0.1px hsl(0,0%,0%),
+              0px -1.25px 0.3px hsl(0,0%,0%),
+              0px -1.5px 0.6px #000000;
+}
+
+.form{
+  color: white;
+  background: #36113b;
+  height: 20px;
+}
+
+#numesa{
+  width: 50px;
+}
+
+#enviar{
+  padding-left: 20px;
+}
+
+button:hover{
+  cursor: pointer;
+  background: #1f1f1f;
+  box-shadow: 0px -1px 0.1px hsl(0,0%,74%),
+              0px -1.5px 0.2px hsl(0,0%,66%),
+              0px -2px 0.3px hsl(0,0%,58%),
+              0px -2.5px 0.4px hsl(0,0%,50%),
+              0px -3px 0.5px hsl(0,0%,42%),
+              0px -3.5px 0.6px #000000;
+}
+
+button{
+  color: white;
+  font-size: 16px;
+  background: black;
+  border-radius: 10%;
+  box-shadow: 0px -1px 0px hsl(0,0%,74%),
+              0px -1.5px 0px hsl(0,0%,70%),
+              0px -2px 0px hsl(0,0%,62%),
+              0px -2.5px 0px hsl(0,0%,58%),
+              0px -3px 0px hsl(0,0%,50%),
+              0px -3.5px 0px hsl(0,0%,46%),
+              0px -4px 0px hsl(0,0%,38%),
+              0px -4.5px 0px #000000;
+}
+
+
+
+
+table{
+  background: black;
+  width: 1050px;
+  height: 600px;
+}
+
+tr{
+  height: 60px;
+  text-align: center;
+}
+
+td{
+  width: 105px;
+  text-align: center;
+}
+
+#esc{
+  background: url("pictures/Patron.png");
+  background-repeat: repeat;
+  background-size: 100%;
+  background-color: #BDBDBD;
+}
+
+#Bar{
+  background: url("pictures/Patron.png");
+  background-repeat: repeat;
+  background-size: 100%;
+  background-color: #BDBDBD;
+}
+
+#SelfiePared {
+  color: black;
+  transform: rotate(-90deg);
+}
+
+#Barra{
+  transform: rotate(-90deg);
+  color: black;
+  font: bold 30px/1 arial;
+  text-transform: uppercase;
+  text-shadow: -2px  1px  0   #ffffff,
+               -4px  2px  0   #e5e5e5,
+               -6px  3px  0   #cccccc, 
+               -8px  4px  0   #b2b2b2, 
+               -10px 5px  0   #999999,
+               -12px 6px  0   #7f7f7f,
+              3px 8px 15px rgba(0,0,0,0.1),
+              3px 8px  5px rgba(0,0,0,0.3);
+}
+
+#Escenario{
+  color: black;
+  font: bold 30px/1 arial;
+  text-transform: uppercase;
+  text-shadow: 0  2px  0   #ffffff,
+               0  4px  0   #f2f2f2,
+               0  6px  0   #e5e5e5, 
+               0  8px  0   #d8d8d8, 
+               0 10px  0   #cccccc,
+               0 12px  0   #bfbfbf,
+              3px 8px 15px rgba(0,0,0,0.1),
+              3px 8px  5px rgba(0,0,0,0.3);
+}
+
+h2, #SelfiePared{
+  color: white;
+}
+
+#logoSelfie, #Bar, #esc{
+  box-shadow: 0px 1px 0px hsl(0,0%,74%),
+              0px 2px 0px hsl(0,0%,70%),
+              0px 3px 0px hsl(0,0%,66%),
+              0px 4px 0px hsl(0,0%,62%),
+              0px 5px 0px hsl(0,0%,58%),
+              0px 6px 0px hsl(0,0%,54%),
+              0px 7px 0px hsl(0,0%,50%),
+              0px 8px 0px hsl(0,0%,46%),
+              0px 9px 0px hsl(0,0%,42%),
+              0px 10px 0px hsl(0,0%,38%),
+              0px 11px 10px #000000;
+}
+
+img{
+  box-shadow: 0px 1px 0px hsl(171,100%,50%),
+              0px 2px 0px hsl(171,100%,48%),
+              0px 3px 0px hsl(171,100%,46%),
+              0px 4px 0px hsl(171,100%,44%),
+              0px 5px 0px hsl(171,100%,40%),
+              0px 6px 0px hsl(171,100%,38%),
+              0px 7px 0px hsl(171,100%,36%),
+              0px 8px 0px hsl(171,100%,34%),
+              0px 9px 0px hsl(171,100%,30%),
+              0px 10px 0px hsl(171,100%,28%),
+              0px 11px 10px #00ffda;
+}
+
+img:hover{
+  box-shadow: initial;
+}
